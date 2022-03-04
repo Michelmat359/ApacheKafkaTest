@@ -35,3 +35,11 @@ Para activar un source y un sink
 ````
 bin/connect-standalone.sh config/connect-standalone-properties ./source.properties ./sink.properties
 ````
+
+# Orchestration
+````
+docker-compose -f ./Orchestration/docker-compose.yml up -d
+````
+
+Cliente:
+Bootstrap servers: <b>localhost:29092, localhost:39092</b>
